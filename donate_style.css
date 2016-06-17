@@ -44,6 +44,7 @@ a:hover {
 
 #text-area {
 	width: 40%;
+	height: 550px;
 	background-color: #e0ffff;
 	margin: auto;
 	border: 2px solid black;
