@@ -48,8 +48,109 @@ a:hover {
 	text-align: center;
 }
 
-#flubblers {
+#text-area {
+	width: 40%;
+	background-color: #e0ffff;
 	margin: auto;
-	margin-left: 42%;
-	margin-top: 10%;
+	border: 2px solid black;
+	border-radius: 5px;
+	margin-top: 2%;
+	padding: 10px;
+}
+
+.text {
+	font-family: serif, sans-serif;
+}
+
+.step {
+	font-family: serif, sans-serif;
+	font-weight: bold;
+	font-size: 1.2 em;
+}
+
+#empty-text-area {
+	width: 60%;
+	margin: auto;
+}
+
+#step-img {
+	width: 50%;
+	margin-left: 25%;
+	border: 2px solid black;
+}
+
+#downloads {
+	margin: auto;
+	border: 2px solid black;
+}
+
+#downloads-data-header {
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 20px;
+	font-weight: bold;
+	background-color: #33ccff;
+	border: 2px solid black;
+}
+
+#downloads-data {
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: #66ff99;
+	border-bottom: 2px solid black;
+}
+
+#text-footer {
+	width: 60%;
+	background-color: #e0ffff;
+	margin: auto;
+	border: 2px solid black;
+	border-radius: 5px;
+	margin-top: 2%;
+	padding: 10px;
+}
+
+#download-link {
+	text-decoration: none;
+	color: red;
+}
+
+#download-link:hover {
+	background-color: #e0ffff;
+	font-weight: bold;
+}
+
+@media (max-width: 650px) {
+	#text-area {
+		width: 75%;
+	}
+	
+	#downloads {
+		width: 80%;
+	}
+	
+	#text-footer {
+		width: 75%;
+	}
+}
+
+@media (max-width: 520px) {
+	#downloads-data {
+		padding: 3px;
+	}
+	
+	#downloads-data-header {
+		padding: 3px;
+	}
+}
+
+@media (max-width: 430px) {
+	#empty-text-area {
+		width: 90%;
+	}
+	
+	#step-img {
+		width: 75%;
+		margin-left: 12.5%;
+	}
 }
