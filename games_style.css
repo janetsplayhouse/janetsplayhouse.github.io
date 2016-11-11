@@ -1,0 +1,156 @@
+body {
+	background-color: #ADD8E6;
+	margin: 0;
+	padding: 0;
+}
+
+#header-background {
+	width: 100%;
+	background-color: #778899;
+	padding-top: 2px;
+	height: 75px;
+}
+
+#header {
+	text-align: center;
+	color: white;
+	font-family: serif, sans-serif;
+	font-weight: bold;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 10px;
+	font-weight: bold;
+	color: black;
+}
+
+nav ul {
+	text-align: center;
+	background-color: #20B2AA;
+	padding: 0;
+}
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+a:hover {
+	background-color: #e0ffff;
+}
+
+#location {
+	color: black;
+	font-family: serif, sans-serif;
+	text-align: center;
+}
+
+#text-area {
+	width: 40%;
+	background-color: #e0ffff;
+	margin: auto;
+	border: 2px solid black;
+	border-radius: 5px;
+	margin-top: 2%;
+	padding: 10px;
+}
+
+.text {
+	font-family: serif, sans-serif;
+}
+
+.step {
+	font-family: serif, sans-serif;
+	font-weight: bold;
+	font-size: 1.2 em;
+}
+
+#empty-text-area {
+	width: 60%;
+	margin: auto;
+}
+
+#step-img {
+	width: 50%;
+	margin-left: 25%;
+	border: 2px solid black;
+}
+
+#downloads {
+	margin: auto;
+	border: 2px solid black;
+}
+
+#downloads-data-header {
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 20px;
+	font-weight: bold;
+	background-color: #33ccff;
+	border: 2px solid black;
+}
+
+#downloads-data {
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: #66ff99;
+	border-bottom: 2px solid black;
+}
+
+#text-footer {
+	width: 60%;
+	background-color: #e0ffff;
+	margin: auto;
+	border: 2px solid black;
+	border-radius: 5px;
+	margin-top: 2%;
+	padding: 10px;
+}
+
+#download-link {
+	text-decoration: none;
+	color: red;
+}
+
+#download-link:hover {
+	background-color: #e0ffff;
+	font-weight: bold;
+}
+
+@media (max-width: 650px) {
+	#text-area {
+		width: 75%;
+	}
+	
+	#downloads {
+		width: 80%;
+	}
+	
+	#text-footer {
+		width: 75%;
+	}
+}
+
+@media (max-width: 520px) {
+	#downloads-data {
+		padding: 3px;
+	}
+	
+	#downloads-data-header {
+		padding: 3px;
+	}
+}
+
+@media (max-width: 430px) {
+	#empty-text-area {
+		width: 90%;
+	}
+	
+	#step-img {
+		width: 75%;
+		margin-left: 12.5%;
+	}
+}

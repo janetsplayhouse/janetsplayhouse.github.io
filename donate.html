@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Janet's Playhouse</title>
+	<link type="text/css" rel="stylesheet" href="donate_style.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div id="header-background">
+			<h2 id="header">Welcome to Janet's Playhouse!</h2>
+		<nav>
+			<ul>
+				<a href="http://janetsplayhouse.github.io"><li>Home</li></a>
+				<a href="http://janetsplayhouse.github.io/about"><li>About Us</li></a>
+				<a href="http://janetsplayhouse.github.io/donate"><li>Donate</li></a>
+				<a href="http://janetsplayhouse.github.io/join"><li>Join</li></a>
+				<a href="http://janetsplayhouse.github.io/games"><li>Games</li></a>
+			</ul>
+		</nav>
+		<div id="location"><h3>Donate<h3></div>
+		<div id="text-area">
+			<p class="text">Thank you for your interest in donation!  All you need to do
+			in order to donate is enter the amount you would like to give, and simply click
+			the "Donate" button at the bottom of the screen!</p>
+			<p class="text">Remember, all funds go directly to Janet!  This money will
+			help pay for new additions to It's Playhouse and Daycare, as well
+			as many other of It's facilities.</p>
+			<p class="text"><em>Thank you!!</em></p>
+			
+			<form action="http://janetsplayhouse.github.io/donated/amount" method="get">
+				Please choose the amount you would like to donate. <br>
+				<input id="donate" type="radio" name="amount" value="1-25">$1-25<br>
+				<input id="donate" type="radio" name="amount" value="26-50">$26-50<br>
+				<input id="donate" type="radio" name="amount" value="51-100">$51-100<br>
+				<input id="donate" type="radio" name="amount" value="100-1000">$100-1000<br>
+				<input id="donate" type="radio" name="amount" value="all">All your money (recommended)<br><br>
+				<input type="submit" value="Donate" onclick="confirm('ARE YOU SURE YOU WOULD LIKE TO CONTINUE? PRESSING THE OK BUTTON WILL CONFIRM YOUR DONATION TO JANETS PLAYHOUSE.')">
+			</form>
+			<p class="text">
+		
+		</div>
+		
+	</body>
+</html>

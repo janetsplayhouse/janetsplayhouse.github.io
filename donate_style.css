@@ -1,0 +1,97 @@
+body {
+	background-color: #ADD8E6;
+	margin: 0;
+	padding: 0;
+}
+
+#header-background {
+	width: 100%;
+	background-color: #778899;
+	padding-top: 2px;
+	height: 75px;
+}
+
+#header {
+	text-align: center;
+	color: white;
+	font-family: serif, sans-serif;
+	font-weight: bold;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 10px;
+	font-weight: bold;
+	color: black;
+}
+
+nav ul {
+	text-align: center;
+	background-color: #20B2AA;
+	padding: 0;
+}
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+a:hover {
+	background-color: #e0ffff;
+}
+
+#text-area {
+	width: 40%;
+	background-color: #e0ffff;
+	margin: auto;
+	border: 2px solid black;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.text {
+	color: black;
+	font-family: serif, sans-serif;
+}
+
+#location {
+	color: black;
+	font-weight: bold;
+	margin: auto;
+	text-align: center;
+}
+
+form {
+	text-align: left;
+}
+
+#donate {
+	text-align: left;
+}
+
+img {
+	margin: auto;
+	border-radius: 10px;
+	text-align: center;
+}
+
+@media (max-width: 780px) {
+	#text-area {
+		width: 95%;
+		background-color: #e0ffff;
+		height: 400px;
+		margin: auto;
+		border: 2px solid black;
+		border-radius: 5px;
+		margin-top: 5%;
+		padding: 10px;
+	}
+}
+
+@media (max-width: 315px) {
+	img {
+		width: 100%;
+	}
+}
