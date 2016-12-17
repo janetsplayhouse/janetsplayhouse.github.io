@@ -4,6 +4,7 @@ ctx.canvas.width = window.innerWidth;
 ctx.canvas.height = window.innerHeight;
 var WIDTH = window.innerWidth;
 var HEIGHT = window.innerHeight;
+var checkSize = window.innerWidth;
 
 var intro_song = document.getElementById("intro");
 intro_song.loop = true;
@@ -64,8 +65,8 @@ var buttons = {
 
 function mouseClicked(e) {
 	// Update mouse (x, y) position each click
-	mouseX = e.pageX;
-	mouseY = e.pageY;
+	mouseX = e.pageX - canvas.offsetLeft;
+	mouseY = e.pageY - canvas.offsetTop;
 	
 	if (game_intro) {
 		// If click is inside play button area, end game_intro
@@ -797,6 +798,55 @@ function ngame() {
 				break;
 		}
 	}, false);
+	
+	if (checkSize > window.innerWidth || checkSize < window.innerWidth) {
+		// If player resizes the window, change these variables to adjust objects on screen
+		ctx.canvas.width = window.innerWidth;
+		ctx.canvas.height = window.innerHeight;
+		WIDTH = window.innerWidth;
+		HEIGHT = window.innerHeight;
+		checkSize = window.innerWidth;
+		
+		// Adjust player and buttons to fit the new screen size
+		player = {
+			x: WIDTH / 2,
+			y: HEIGHT - 100,
+			speedX: 7.5,
+			w: 120,
+			h: 75,
+		};
+		
+		buttons = {
+			intro: {
+				play: {
+					x: WIDTH / 2 - 150,
+					y: HEIGHT / 2 - 30,
+					w: 310,
+					h: 50
+				},
+				controls: {
+					x: WIDTH / 2 - 150,
+					y: HEIGHT / 2 + 30,
+					w: 310,
+					h: 50
+				}
+			},
+			go: {
+				play: {
+					x: WIDTH / 2 - 150,
+					y: HEIGHT / 2 - 30,
+					w: 310,
+					h: 50
+				},
+				main: {
+					x: WIDTH / 2 - 150,
+					y: HEIGHT / 2 + 30,
+					w: 310,
+					h: 50
+				}
+			}
+		};
+	}
 	
 	window.requestAnimationFrame(ngame);
 }
