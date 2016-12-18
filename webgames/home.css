@@ -47,3 +47,17 @@ a:hover {
 	font-family: serif, sans-serif;
 	text-align: center;
 }
+
+#all{
+    width:100%;
+    float:left;
+    text-align:center;
+}
+
+div.sub, iframe {
+    width: 552px;
+    height: 167px;
+    margin: 0 auto;
+	margin-top: -75px;
+}
+
